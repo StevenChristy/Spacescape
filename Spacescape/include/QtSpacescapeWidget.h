@@ -30,9 +30,11 @@ THE SOFTWARE.
 #ifndef QtSpacescapeWidget_H
 #define QtSpacescapeWidget_H
 
+#ifndef Q_MOC_RUN
 #include "QtOgreWidget.h"
 #include "SpacescapePlugin.h"
 #include "SpacescapeLayer.h"
+#endif
 
 /** QtSpacescapeWidget is a subclass of QtOgreWidget and it interacts
 with the Spacescape Ogre Plugin and Ogre.

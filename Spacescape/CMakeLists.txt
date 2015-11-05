@@ -27,5 +27,5 @@ SET(SPC_MOC_HDRS
 QT4_WRAP_CPP(SPC_MOC_SRCS ${SPC_MOC_HDRS})
 
 ADD_EXECUTABLE(Spacescape ${SPC_SRCS} ${SPC_MOC_SRCS})
-TARGET_LINK_LIBRARIES(Spacescape SpacescapePlugin ${OGRE_LIBRARIES} ${QT_LIBRARIES} ${QtPropertyBrowser_Library})
-SET_TARGET_PROPERTIES(Spacescape PROPERTIES SUFFIX ".bin")
+TARGET_LINK_LIBRARIES(Spacescape SpacescapePlugin ${OGRE_LIBRARIES} ${QT_LIBRARIES} ${QtPropertyBrowser_Library} boost_system)
+

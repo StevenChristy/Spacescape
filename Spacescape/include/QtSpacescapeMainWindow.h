@@ -30,6 +30,7 @@ THE SOFTWARE.
 #ifndef __QTSPACESCAPEMAINWINDOW_H__
 #define __QTSPACESCAPEMAINWINDOW_H__
 
+#ifndef Q_MOC_RUN
 #include <QMainWindow>
 #include <QtProperty>
 #include <QtVariantPropertyManager>
@@ -42,6 +43,7 @@ THE SOFTWARE.
 #include "SpacescapeProgressListener.h"
 #if defined(Q_WS_WIN)
 #pragma warning( pop )
+#endif
 #endif
 
 namespace Ui {

@@ -30,6 +30,7 @@ THE SOFTWARE.
 #ifndef QtOgreWidget_H
 #define QtOgreWidget_H
 
+#ifndef Q_MOC_RUN
 #include <QWidget>
 #if defined(Q_WS_WIN)
 // disable some warning
@@ -39,6 +40,7 @@ THE SOFTWARE.
 #pragma warning( pop )
 #else
 #include <OGRE/Ogre.h>
+#endif
 #endif
 
 #if defined(Q_WS_MAC)

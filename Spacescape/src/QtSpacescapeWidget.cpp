@@ -327,7 +327,7 @@ void QtSpacescapeWidget::setLayerVisible(unsigned int layerID, bool visible)
 void QtSpacescapeWidget::setupResources(void) {
 	// Load resource paths from config file
 	Ogre::ConfigFile config;
-        config.load("../resources.cfg");
+        config.load("resources.cfg");
 	
 	// Go through all sections & settings in the file
 	Ogre::ConfigFile::SectionIterator it = config.getSectionIterator();
